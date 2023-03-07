@@ -1,7 +1,6 @@
 
 let start = document.getElementById('start-button');
 const clockEl = document.getElementById('clock');
-let questionEl = document.getElementById('question');
 const startingTime = 2;
 let time = startingTime * 60;
 var timer = 0;
@@ -27,33 +26,11 @@ function updateCountdown() {
         time--;
     }
     if (seconds==0 && minutes==0) {
-        document.getElementById('clock').innerText="";
+        document.getElementById('clock').innerText="0";
   
 
 
     }};
-
-
-
-
-
-/* function readProjectsFromStorage() {
-    var givenAnswer = localStorage.getItem('numCorrectAnswers');
-    if (givenAnswer) {
-      givenAnswer = JSON.parse(givenAnswer);
-    } else {
-      givenAnswer = [];
-    }
-    return givenAnswer;
-  }
-
-    }
-
-    readProjectsFromStorage();
-    console.log(readProjectsFromStorage);
-};
-*/
-
 
 startQuiz = function () {
   
@@ -105,7 +82,7 @@ startQuiz = function () {
     
     function checkAnswer(i, arr) {
       // This is the function that will run, when clicked on one of the answers
-      // Check if givenAnswer is sams as the correct one
+      // Check if givenAnswer is same as the correct one
       // After this, check if it's the last question:
       // If it is: empty the answerArea and let them know it's done.
       
@@ -118,7 +95,7 @@ startQuiz = function () {
           addChecker(true);     
           numCorrectAnswers=numCorrectAnswers+1; 
 
-          console.log('testing');
+  //        console.log('testing');
           localStorage.setItem('numCorrectAnswers', JSON.stringify(numCorrectAnswers));     
 //          console.log('correct',numCorrectAnswers);      
         } else {
@@ -137,7 +114,7 @@ startQuiz = function () {
         }
         
          localStorage.getItem('numCorrectAnswers', JSON.parse(numCorrectAnswers));
-         console.log(numCorrectAnswers);
+    //     console.log(numCorrectAnswers);
 
         
                   
@@ -149,7 +126,7 @@ startQuiz = function () {
     function addChecker(check) {
     // This function adds a div element to the page
     // Used to see if it was correct or false
-    console.log(check)
+  //  console.log(check)
       var createDiv = document.createElement('div'),
           txt       = document.createTextNode(current + 1);
       

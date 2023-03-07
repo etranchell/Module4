@@ -6,7 +6,7 @@
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
    /* border: 1px solid rgb(59, 59, 236); */
-    color: white;
+    color:black;
    
 }
 
@@ -36,7 +36,7 @@ body {
        text-align: center;
        padding-top: 20px;
        padding-bottom: 20px;
-       background-color:darkblue;
+ /*      background-color:darkblue; */
 }
 
 .answers div {
