@@ -16,6 +16,8 @@ I learned I still don't know JavaScript very well and I struggled on this.
     
   Showing quiz page before start quiz button is pushed. 
     
+  ![image](https://user-images.githubusercontent.com/123092979/223321455-a6f6aa86-c285-49c2-b86b-4a0c117d319e.png)
+    
  https://user-images.githubusercontent.com/123092979/223319855-8e7d561e-5d34-4847-8601-a0b1493517ed.png
 
     Showing page during active quiz.
